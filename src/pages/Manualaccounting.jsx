@@ -1,13 +1,22 @@
-import React from 'react'
-import UserInfo from './UserInfo'
+import React from "react";
+import UserInfo from "./UserInfo";
+import { useEffect } from "react";
+import { useTitle } from "../TitleContext";
 
 const Manualaccounting = () => {
-  return (
-      <>
-          <UserInfo />
-          <div><h1>Manualaccounting </h1></div>
-      </>
-  )
-}
+  const { setTitle } = useTitle();
 
-export default Manualaccounting
+  useEffect(() => {
+    setTitle("pyton-cigereate-balancing:Manualaccounting");
+  }, [setTitle]);
+  return (
+    <>
+      <UserInfo isMain={true} />
+      <div>
+        <h1>Manualaccounting </h1>
+      </div>
+    </>
+  );
+};
+
+export default Manualaccounting;

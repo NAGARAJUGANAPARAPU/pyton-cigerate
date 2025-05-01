@@ -10,7 +10,7 @@ const Reporting = () => {
   }, [setTitle]);
   return (
     <>
-      <UserInfo />
+      <UserInfo isMain={true} />
       <div>
         <label>process type</label>
         <input type="file" />
