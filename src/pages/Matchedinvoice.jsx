@@ -27,7 +27,7 @@ const Matchedinvoice = () => {
   }, [setTitle]);
 
   return (
-    <>
+    <> 
       <UserInfo isMain={true} />
       <div>
         <h1>Matched invoice</h1>

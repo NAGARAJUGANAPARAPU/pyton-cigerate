@@ -31,6 +31,10 @@ export default function VendorPage() {
     setVendors([...vendors, newVendor]);
     setForm({ name: "", email: "", phone: "" });
   };
+  const handleDelVendor = (id) => {
+    setVendors(vendors.filter((vendor) => vendor.id !== id));
+  };
+
   useEffect(() => {
     setTitle("pyton-cigereate-balancing:Vendor Page");
   }, [setTitle]);
@@ -41,10 +45,11 @@ export default function VendorPage() {
         <UserInfo isMain={true} />
         <h1>Vendor Page</h1>
 
-        <div>
+        <div className="vendor-container">
           <h2>Add New Vendor</h2>
           <input
             type="text"
+            className="vendor-input"
             name="name"
             placeholder="Name"
             value={form.name}
@@ -53,6 +58,7 @@ export default function VendorPage() {
           <input
             type="email"
             name="email"
+            className="vendor-input"
             placeholder="Email"
             value={form.email}
             onChange={handleChange}
@@ -60,6 +66,7 @@ export default function VendorPage() {
           <input
             type="text"
             name="phone"
+            className="vendor-input"
             placeholder="Phone"
             value={form.phone}
             onChange={handleChange}
@@ -69,12 +76,15 @@ export default function VendorPage() {
 
         <div>
           <h2>Vendor List</h2>
-          <ul>
+          <ul className="vendor-list">
             {vendors.map((vendor) => (
               <li key={vendor.id}>
                 <p>{vendor.name}</p>
                 <p>
                   {vendor.email} • {vendor.phone}
+                  <button onClick={() => handleDelVendor(vendor.id)}>
+                    Delete
+                  </button>
                 </p>
               </li>
             ))}

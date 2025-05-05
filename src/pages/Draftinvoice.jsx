@@ -14,7 +14,7 @@ const Draftinvoice = () => {
   return (
     <>
       <UserInfo isMain="false" />
-      <div>
+      <div className="draft-invoice-links">
         <ul>
           <Link to="/draft-invoice/venders">
             <li>venders</li>
@@ -22,14 +22,14 @@ const Draftinvoice = () => {
           <Link to="/draft-invoice/admit">
             <li>admin</li>
           </Link>
-          <Link>
+          <Link to="/draft-invoice/About">
             <li>About</li>
           </Link>
-          <Link>
+          <Link to="/draft-invoice/Contact">
             <li>contact</li>
           </Link>
-          <Link>
-            <li>creater</li>
+          <Link to="/draft-invoice/Creater">
+            <li>Creater</li>
           </Link>
         </ul>
       </div>

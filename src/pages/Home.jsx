@@ -8,8 +8,11 @@ const Home = () => {
   const { setTitle } = useTitle();
 
   useEffect(() => {
-    setTitle("pyton-cigereate-balancing");
+    setTitle("pyton-cigereate-balancing,");
   }, [setTitle]);
+  // useEffect(() => {
+  //   setTitle({ text: "pyton-cigereate-balancing", style: { color: "white" } });
+  // }, [setTitle]);
 
   return (
     <>

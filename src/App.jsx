@@ -25,6 +25,9 @@ import Manualtesting from "./pages/Manualtesting";
 import Manualaccounting from "./pages/Manualaccounting";
 import Venderdata from "./datapages/Venderdata";
 import Admitdata from "./datapages/Admitdata";
+import About from "./datapages/About";
+import Contact from "./datapages/Contact";
+import Creater from "./datapages/Creater";
 
 function App() {
   return (
@@ -42,6 +45,11 @@ function App() {
           <Route path="/manual-acounting" element={<Manualaccounting />} />
           <Route path="/draft-invoice/venders" element={<Venderdata />} />
           <Route path="/draft-invoice/admit" element={<Admitdata />} />
+          <Route path="/draft-invoice/About" element={<About />} />
+          <Route path="/draft-invoice/Contact" element={<Contact />} />
+          <Route path="/draft-invoice/Creater" element={<Creater />} />
+          <Route path="/gallery" element={<About />} />
+          <Route path="/photo$/reporting" element={<Reporting />} />
 
           <Route
             path="/upload-success"

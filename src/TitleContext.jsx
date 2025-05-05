@@ -5,6 +5,7 @@ const TitleContext = createContext();
 
 export const TitleProvider = ({ children }) => {
   const [title, setTitle] = useState("pyton-cigereate-balancing");
+  
 
   return (
     <TitleContext.Provider value={{ title, setTitle }}>
