@@ -16,7 +16,7 @@ const Draftinvoice = () => {
       <UserInfo isMain="false" />
       <div className="draft-invoice-links">
         <ul>
-          <Link to="/draft-invoice/venders">
+          <Link to="/draft-invoice/venders">  
             <li>venders</li>
           </Link>
           <Link to="/draft-invoice/admit">

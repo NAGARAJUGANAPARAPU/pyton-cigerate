@@ -8,7 +8,7 @@ export const TitleProvider = ({ children }) => {
   
 
   return (
-    <TitleContext.Provider value={{ title, setTitle }}>
+    <TitleContext.Provider value={{ title, setTitle }}> 
       {children}
     </TitleContext.Provider>
   );

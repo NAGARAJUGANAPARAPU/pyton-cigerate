@@ -8,7 +8,7 @@ const Home = () => {
   const { setTitle } = useTitle();
 
   useEffect(() => {
-    setTitle("pyton-cigereate-balancing,");
+    setTitle("Pyton-Cigereate-Balancing");
   }, [setTitle]);
   // useEffect(() => {
   //   setTitle({ text: "pyton-cigereate-balancing", style: { color: "white" } });
@@ -20,5 +20,5 @@ const Home = () => {
     </>
   );
 };
-
+  
 export default Home;
